@@ -1,0 +1,18 @@
+galaxy_info:
+  author: VEBER Arnaud
+  description: ansible role vault
+  company: VEBER Arnaud
+
+  license: MIT
+
+  min_ansible_version: 2.7
+
+  platforms:
+    - name: amazonlinux
+      versions:
+        - 2
+
+  galaxy_tags:
+    - vault
+
+dependencies: []

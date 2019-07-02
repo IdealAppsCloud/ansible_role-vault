@@ -1,0 +1,13 @@
+---
+- name: create vault config directory
+  file:
+    path: "{{ item }}"
+    state: directory
+    owner: ec2-user
+  with_items:
+    - "{{ vault_config_dir }}"
+
+- name: create main configuration file
+  copy:
+    dest: "{{ vault_config_dir }}/00-main.json"
+    content: "{{ vault_config | to_nice_json(indent=2) }}"

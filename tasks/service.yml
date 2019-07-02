@@ -1,0 +1,10 @@
+---
+- name: create vault service
+  template:
+    src: ../templates/etc/systemd/system/vault.service.j2
+    dest: /etc/systemd/system/vault.service
+
+- name: enable vault service
+  service:
+    name: vault
+    enabled: yes

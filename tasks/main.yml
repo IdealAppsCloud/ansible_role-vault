@@ -1,0 +1,13 @@
+---
+- name: requirements
+  import_tasks: requirements.yml
+
+- name: install
+  import_tasks: install.yml
+
+- name: configure
+  import_tasks: configure.yml
+
+- name: service
+  import_tasks: service.yml
+
